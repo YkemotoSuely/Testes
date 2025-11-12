@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _02_CacaAoBugMVC.Model
+{
+    class AlunoService //Classe de regra de negócio de Cálculos
+    {
+        public double CalcularMedia(double n1, double n2, double n3)
+        {
+            return (n1 + n2 +  n3)/3; 
+        }
+
+        public string ObterSituacao(double media) 
+        {
+            if (media >= 7)
+                return "Aprovado";
+            else if (media >= 5)
+                return "Em exame final";
+            else
+                return "Reprovado";
+        }
+        public double CalcularTaxaAprovacao(int totalAlunos, int alunosAprovados) 
+        {
+            //transforma a variável do tipo int para double utilizando cast (tipo)variável
+            return (alunosAprovados /(double) totalAlunos) * 100.0;
+        }
+    }
+}
