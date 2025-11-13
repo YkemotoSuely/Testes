@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _02_CacaAoBugMVC.Model
 {
-    class ValidaService
+    public class ValidaService
     {
         //padrão:
         // - mínimo 3 caracteres

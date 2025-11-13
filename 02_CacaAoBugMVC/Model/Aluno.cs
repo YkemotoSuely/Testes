@@ -1,7 +1,7 @@
 ﻿
 namespace _02_CacaAoBugMVC.Model
 {
-    class Aluno //Classe de objeto relacional
+    public class Aluno //Classe de objeto relacional
     {
         //private string nome = string.Empty;
         //metodos acessadores:
@@ -21,7 +21,8 @@ namespace _02_CacaAoBugMVC.Model
         public double Nota1 { get; set; }
         public double Nota2 { get; set; }
         public double Nota3 { get; set; }
-        public string Situacap { get; set; } = string.Empty ;
+        public double Media {  get; set; }
+        public string Situacao { get; set; } = string.Empty ;
 
     }
 }
