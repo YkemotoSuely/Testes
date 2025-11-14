@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace _02_CacaAoBugMVC.Model
 {
-    class AlunoService //Classe de regra de negócio de Cálculos
+    public class AlunoService //Classe de regra de negócio de Cálculos
     {
         public double CalcularMedia(double n1, double n2, double n3)
         {
-            return (n1 + n2 +  n3)/3; 
+            return Math.Round((n1 + n2 +  n3)/3.0, 2); 
         }
 
         public string ObterSituacao(double media) 
