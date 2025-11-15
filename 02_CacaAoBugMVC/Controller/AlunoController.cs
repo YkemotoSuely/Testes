@@ -43,9 +43,9 @@ namespace _02_CacaAoBugMVC.Controller
 
         public double ObterTaxaAprovacao() 
         {
-            int totalAlunos = alunos.Count;
-            int totalAprovados = alunos.FindAll(a => a.Situacao == "APROVADO").Count;
-            return alunoService.CalcularTaxaAprovacao(totalAlunos, totalAprovados);
+            int total = alunos.Count;
+            int aprovados = alunos.FindAll(a => a.Situacao == "Aprovado").Count;
+            return alunoService.CalcularTaxaAprovacao(total, aprovados);
         }
         public ValidaService GetValidaService() => validaService;
         

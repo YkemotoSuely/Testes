@@ -47,6 +47,8 @@
     <Compile Include="Model\Aluno.cs" />
     <Compile Include="Model\AlunoService.cs" />
     <Compile Include="Model\ValidaService.cs" />
+    <Compile Include="Passagemparametro.cs" />
+    <Compile Include="MembrosEstaticosInstancia .cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
