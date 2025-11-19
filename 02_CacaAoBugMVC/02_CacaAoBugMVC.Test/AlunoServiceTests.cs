@@ -6,13 +6,13 @@ using _02_CacaAoBugMVC.Model;
 
 namespace _02_CacaAoBugMVC.Test
 {
-   [TestClass]
-   public class AlunoServiceTests
-   {
+    [TestClass]
+    public class AlunoServiceTests
+    {
         private object service;
 
         [TestMethod]
-        public void CalcularMedia_DeveRetornarCorreto() 
+        public void CalcularMedia_DeveRetornarCorreto()
         {
             //Arrange (preparar) - 
             var service = new AlunoService();
@@ -23,8 +23,8 @@ namespace _02_CacaAoBugMVC.Test
             // Assert (Afirmar) - realiza o teste e compara com o valor determinado por mim 
             Assert.AreEqual(7.33, resultado);
 
-        }[TestMethod]
-        public void CalcularMedia_DeveRetornarErro() 
+        } [TestMethod]
+        public void CalcularMedia_DeveRetornarErro()
         {
             //Arrange (preparar) - 
             var service = new AlunoService();
@@ -33,11 +33,11 @@ namespace _02_CacaAoBugMVC.Test
             var resultado = service.CalcularMedia(6.0, 5.5, 3.5);
 
             // Assert (Afirmar) - realiza o teste e compara com o valor determinado por mim 
-            Assert.AreEqual(7.33, resultado);
+            Assert.AreNotEqual(7.33, resultado);
 
         }
         [TestMethod]
-        public void ObterSituacao_DeveRetornarCorreto() 
+        public void ObterSituacao_DeveRetornarCorreto()
         {
             //Arrange(preparar)
             var service = new AlunoService();
@@ -52,8 +52,11 @@ namespace _02_CacaAoBugMVC.Test
             Assert.AreEqual("Reprovado", resultadoReprovado);
 
         }
+        
+
+        
 
 
-   }
+    }
    
 }

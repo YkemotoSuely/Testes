@@ -24,7 +24,7 @@ namespace _02_CacaAoBugMVC.Controller
         {
             mensagemErro = string.Empty;
             //validação se o nome do aluno está correto
-            if (!validaService.ValidaNome(aluno.Nome, out string erroNome))
+            if (!validaService.ValidarNome(aluno.Nome, out string erroNome))
             {
                 mensagemErro = $"Nome inválido {erroNome}";
                 return false;

@@ -31,7 +31,7 @@ namespace _02_CacaAoBugMVC
                         Console.Write("Informe o nome do aluno:");
                         nome = Console.ReadLine();
 
-                        if (validacao.ValidaNome(nome, out string msgErro)) break;
+                        if (validacao.ValidarNome(nome, out string msgErro)) break;
 
                         Console.WriteLine($"Erro: \n{msgErro});\n");
                     }
@@ -84,7 +84,7 @@ namespace _02_CacaAoBugMVC
                 Console.Write($"Informe a {nota} nota: ");
                 string entrada = Console.ReadLine();
                 //return double.Parse(entrada);
-                if(validacao.ConverteNota(entrada, out double valorNota)) return valorNota;
+                if(validacao.ConverterNota(entrada, out double valorNota)) return valorNota;
 
                 Console.WriteLine("Nota inválida!Digite um número entre 0 e 10");
             }
